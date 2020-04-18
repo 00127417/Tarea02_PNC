@@ -19,6 +19,8 @@ public class MainController {
 				+ "Year: 4 " );
 	}
 	
+	
+	//En este ejercicio se hizo uso de la congruencia de Zeller
 	@RequestMapping("/date")
 	public @ResponseBody String date(HttpServletRequest request) {
 		Integer day = Integer.parseInt(request.getParameter("day"));
